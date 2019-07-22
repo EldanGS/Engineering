@@ -139,6 +139,7 @@ class Truck(CarBase):
         self.body_width = width
         self.body_length = length
         self.body_height = height
+        self.car_type = 'truck'
 
     def get_body_volume(self):
         return self.body_width * self.body_height * self.body_length
