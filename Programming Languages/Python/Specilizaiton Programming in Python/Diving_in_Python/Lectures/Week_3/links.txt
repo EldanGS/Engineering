@@ -1,0 +1,22 @@
+https://docs.python.org/3.6/tutorial/classes.html
+
+https://www.python-course.eu/python3_object_oriented_programming.php
+
+https://www.python-course.eu/python3_class_and_instance_attributes.php
+
+https://www.python-course.eu/python3_properties.php
+
+https://ru.wikibooks.org/wiki/Python/Объектно-ориентированное_программирование_на_Python
+
+
+Наследование классов в python:
+https://docs.python.org/3/tutorial/classes.html#inheritance
+
+
+Обработка ошибок, исключения в python
+https://docs.python.org/3.6/tutorial/errors.html
+
+
+Built-in exceptions:
+https://docs.python.org/3/library/exceptions.html
+
