@@ -1,0 +1,12 @@
+1. multiprocessing:
+https://docs.python.org/3.6/library/multiprocessing.html
+
+2. threading:
+https://docs.python.org/3.6/library/threading.html
+
+3. concurrent.futures:
+https://docs.python.org/3/library/concurrent.futures.html
+
+4. socket:
+https://docs.python.org/3.6/library/socket.html
+
