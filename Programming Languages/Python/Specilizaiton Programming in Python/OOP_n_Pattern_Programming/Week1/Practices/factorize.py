@@ -32,7 +32,7 @@ test_many_multipliers - проверяет случаи, когда переда
 """
 
 import unittest
-import math
+
 
 def is_not_negative(x):
     return x >= 0
@@ -61,7 +61,7 @@ def factorize(x):
         result.append(2)
         x //= 2
 
-    for i in range(3, int(math.sqrt(x)) + 1, 2):
+    for i in range(3, int(x ** 0.5) + 1, 2):
         while x % i == 0:
             result.append(i)
             x //= i
