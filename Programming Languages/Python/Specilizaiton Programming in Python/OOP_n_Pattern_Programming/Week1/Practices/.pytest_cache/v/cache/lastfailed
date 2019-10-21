@@ -1,0 +1,5 @@
+{
+  "factorize.py::TestFactorize::test_many_multipliers": true,
+  "factorize.py::TestFactorize::test_simple_numbers": true,
+  "factorize.py::TestFactorize::test_two_simple_multipliers": true
+}

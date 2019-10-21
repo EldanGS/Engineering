@@ -1,0 +1,8 @@
+[
+  "factorize.py::TestFactorize::test_many_multipliers",
+  "factorize.py::TestFactorize::test_negative",
+  "factorize.py::TestFactorize::test_simple_numbers",
+  "factorize.py::TestFactorize::test_two_simple_multipliers",
+  "factorize.py::TestFactorize::test_wrong_types_raise_exception",
+  "factorize.py::TestFactorize::test_zero_and_one_cases"
+]
