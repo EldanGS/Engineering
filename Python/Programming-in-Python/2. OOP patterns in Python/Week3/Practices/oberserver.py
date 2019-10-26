@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class ObservableEngine:
+class ObservableEngine(Engine):
     def __init__(self):
         self._subscribers = set()
 
@@ -11,14 +11,14 @@ class ObservableEngine:
     def unsubscribe(self, subscriber):
         self._subscribers.remove(subscriber)
 
-    def notify(self, message):
+    def notify(self, achieve):
         for subscriber in self._subscribers:
-            subscriber.update(message)
+            subscriber.update(achieve)
 
 
 class AbstractObserver(ABC):
     @abstractmethod
-    def update(self, message):
+    def update(self, achieve):
         pass
 
 
@@ -32,21 +32,8 @@ class ShortNotificationPrinter(AbstractObserver):
 
 class FullNotificationPrinter(AbstractObserver):
     def __init__(self):
-        self.achievements = []
+        self.achievements = list()
 
     def update(self, achieve):
         if achieve not in self.achievements:
             self.achievements.append(achieve)
-
-
-if __name__ == '__main__':
-    notify = {"title": "Покоритель",
-              "text": "Дается при выполнении всех заданий в игре"}
-    short = ShortNotificationPrinter()
-    full = FullNotificationPrinter()
-    obs_engine = ObservableEngine()
-    obs_engine.subscribe(short)
-    obs_engine.subscribe(full)
-    obs_engine.notify(notify)
-
-    print(short.achievements, full.achievements)
