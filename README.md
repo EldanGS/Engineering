@@ -26,7 +26,7 @@ C#, Java. У языка Python есть своя специфика из-за к
 проектирования.
 
 
-#### [Курс 3. Создание Web-сервисов на Python / Building Web-services in Python](3.%20Python%20for%20Web)
+#### [Курс 3. Создание Web-сервисов на Python / Building Web-services in Python](Python/Programming-in-Python/3.%20Building%20web-services%20in%20Python)
 
 Современная жизнь немыслима без web-сервисов, ежедневно приносящих дивиденды в самых разных областях
 человеческой деятельности. А значит, профессия web-разработчика еще долго будет оставаться высокооплачиваемой и
