@@ -1,2 +1,2 @@
 pygame==1.9.6
-PyYAML==4.1
+PyYAML==5.1
