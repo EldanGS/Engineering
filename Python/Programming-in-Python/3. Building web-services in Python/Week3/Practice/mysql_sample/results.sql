@@ -5,7 +5,8 @@ set names utf8;
 SELECT * FROM product;
 
 -- 2. Выбрать названия всех автоматизированных складов
-SELECT name FROM store;
+select name from store
+where is_automated = 1;
 
 -- 3. Посчитать общую сумму в деньгах всех продаж
 SELECT sum(total) as total FROM sale;
@@ -30,14 +31,14 @@ GROUP BY sale.product_id
 HAVING COUNT(DISTINCT(sale.store_id)) = 1;
 
 -- 8. Получить названия всех складов, с которых продавался только один продукт
-SELECT store.name FROM STORE
+SELECT store.name FROM store
 JOIN sale ON store.store_id = sale.store_id
 GROUP BY sale.store_id
 HAVING COUNT(DISTINCT(sale.product_id)) = 1;
 
 -- 9. Выберите все ряды (все поля) из продаж, в которых сумма продажи (total) максимальна (равна максимальной из всех встречающихся)
 SELECT * FROM sale
-WHERE total = (SELECT MAX(total) FROM SALE);
+WHERE total = (SELECT MAX(total) FROM sale);
 
 -- 10. Выведите дату самых максимальных продаж, если таких дат несколько, то самую раннюю из них
 SELECT date FROM sale
