@@ -21,7 +21,7 @@ class SSOToken:
         self.id = random.randrange(10000)
 
     def __eq__(self, other):
-        return self.id == other.guid
+        return self.id == other.id
 
     def __repr__(self):
         return str(self.id)
