@@ -71,7 +71,7 @@ class SomeComponent:
 
         return new
 
-    def __deepcopy__(self, memo={}):
+    def __deepcopy__(self, memo: dict = {}):
         """
         Create a deep copy. This method will be called whenever someone calls
         `copy.deepcopy` with this object and the returned value is returned as
