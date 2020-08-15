@@ -43,6 +43,8 @@ async def queries() -> None:
     )
     logger.info("result: {}", done.pop().result())
 
+    for future in pending:
+        future.cancel()
 
 if __name__ == '__main__':
     ioloop = asyncio.get_event_loop()
